@@ -1,6 +1,6 @@
 {
   "name": "@djignesh21/ui-loop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Context-budgeted visual feedback for coding agents. MCP server + CLI + Claude Code plugin that lets an agent see the UI it just changed without flooding context.",
   "type": "module",
   "license": "MIT",
