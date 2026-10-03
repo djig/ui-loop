@@ -75,16 +75,16 @@ Claude Code (plugin, recommended):
   claude plugin install ui-loop@djig-ui-loop
 
 Claude Code (plain MCP server):
-  claude mcp add ui-loop -- npx -y @djignesh21/ui-loop serve
+  claude mcp add ui-loop -- npx -y @djignesh21/ui-loop@0.1.2 serve
 
 Codex:
-  codex mcp add ui-loop -- npx -y @djignesh21/ui-loop serve
+  codex mcp add ui-loop -- npx -y @djignesh21/ui-loop@0.1.2 serve
 
 Cursor (.cursor/mcp.json):
-  { "mcpServers": { "ui-loop": { "command": "npx", "args": ["-y", "@djignesh21/ui-loop", "serve"] } } }
+  { "mcpServers": { "ui-loop": { "command": "npx", "args": ["-y", "@djignesh21/ui-loop@0.1.2", "serve"] } } }
 
 Any agent (.mcp.json / mcp.json):
-  { "mcpServers": { "ui-loop": { "type": "stdio", "command": "npx", "args": ["-y", "@djignesh21/ui-loop", "serve"] } } }
+  { "mcpServers": { "ui-loop": { "type": "stdio", "command": "npx", "args": ["-y", "@djignesh21/ui-loop@0.1.2", "serve"] } } }
 `;
 
 async function cmdInit(cwd: string): Promise<void> {

@@ -28,7 +28,7 @@ This registers the MCP server, a `PostToolUse` hook that diffs the relevant rout
 Plain MCP server without the hook and skill:
 
 ```bash
-claude mcp add ui-loop -- npx -y @djignesh21/ui-loop serve
+claude mcp add ui-loop -- npx -y @djignesh21/ui-loop@0.1.2 serve
 ```
 
 ### Cursor
@@ -36,7 +36,7 @@ claude mcp add ui-loop -- npx -y @djignesh21/ui-loop serve
 Add to `.cursor/mcp.json`:
 
 ```json
-{ "mcpServers": { "ui-loop": { "command": "npx", "args": ["-y", "@djignesh21/ui-loop", "serve"] } } }
+{ "mcpServers": { "ui-loop": { "command": "npx", "args": ["-y", "@djignesh21/ui-loop@0.1.2", "serve"] } } }
 ```
 
 Optional best-effort hook: copy [`examples/cursor/hooks.json`](examples/cursor/hooks.json) to `.cursor/hooks.json`.
@@ -44,7 +44,7 @@ Optional best-effort hook: copy [`examples/cursor/hooks.json`](examples/cursor/h
 ### Codex
 
 ```bash
-codex mcp add ui-loop -- npx -y @djignesh21/ui-loop serve
+codex mcp add ui-loop -- npx -y @djignesh21/ui-loop@0.1.2 serve
 ```
 
 ### Any agent that reads `mcp.json` / `plugin.json`
@@ -54,7 +54,7 @@ The repo root carries an [agent-plugins.org](https://agent-plugins.org) `plugin.
 ### In your project
 
 ```bash
-npx -y @djignesh21/ui-loop init   # adds .ui-loop/ to .gitignore, prints config snippets
+npx -y @djignesh21/ui-loop@0.1.2 init   # adds .ui-loop/ to .gitignore, prints config snippets
 ```
 
 Chromium is resolved from `UI_LOOP_CHROMIUM`, then Playwright's bundled Chromium, then common system paths (Google Chrome, Chromium). If none is found: `npx playwright install chromium` or set `UI_LOOP_CHROMIUM=/path/to/chrome`.
@@ -180,7 +180,7 @@ ui-loop hook [--cursor]     # stdin: hook payload → stdout: bounded context JS
 ui-loop serve               # MCP over stdio (also the default when stdin is piped)
 ```
 
-Programmatic API: `import { capture, diff, assert, detectDevServer } from '@djignesh21/ui-loop'`.
+Programmatic API: `import { capture, diff, assert, detectDevServer } from '@djignesh21/ui-loop@0.1.2'`.
 
 ## Comparison
 

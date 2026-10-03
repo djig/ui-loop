@@ -1,6 +1,6 @@
 {
   "name": "@djignesh21/ui-loop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Context-budgeted visual feedback for coding agents. MCP server + CLI + Claude Code plugin that lets an agent see the UI it just changed without flooding context.",
   "type": "module",
   "license": "MIT",
@@ -53,7 +53,8 @@
     "mcp.json",
     "README.md",
     "CHANGELOG.md",
-    "LICENSE"
+    "LICENSE",
+    "scripts"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -61,7 +62,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "prepublishOnly": "npm run clean && npm run build && npm test"
+    "prepublishOnly": "npm run clean && npm run build && npm test",
+    "version": "node scripts/pin-version.mjs && git add -A",
+    "pin-version": "node scripts/pin-version.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.20.0",
@@ -76,5 +79,15 @@
     "@types/pngjs": "^6.0.5",
     "typescript": "^5.6.0",
     "vitest": "^3.0.0"
-  }
+  },
+  "pinnedFiles": [
+    "hooks/hooks.json",
+    ".mcp.json",
+    "mcp.json",
+    ".claude-plugin/plugin.json",
+    "examples/cursor/hooks.json",
+    "skills/ui-loop/SKILL.md",
+    "README.md",
+    "src/cli.ts"
+  ]
 }

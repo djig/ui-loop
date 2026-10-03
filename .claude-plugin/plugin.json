@@ -24,7 +24,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@djignesh21/ui-loop",
+        "@djignesh21/ui-loop@0.1.2",
         "serve"
       ]
     }

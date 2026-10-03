@@ -4,7 +4,7 @@
     "ui-loop": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@djignesh21/ui-loop", "serve"]
+      "args": ["-y", "@djignesh21/ui-loop@0.1.2", "serve"]
     }
   }
 }

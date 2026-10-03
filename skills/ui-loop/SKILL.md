@@ -2,7 +2,7 @@
 name: ui-loop
 description: Verify UI changes visually without flooding context. Use after editing any component, page, style or layout file and before claiming a visual fix is done. Captures a baseline, then returns only the changed regions as small crops plus a structured text summary (console errors, failed requests, overflow, layout shifts, a11y violations) within a token budget. Tools: ui_detect_dev_server, ui_capture, ui_diff, ui_region, ui_assert, ui_list, ui_forget.
 license: MIT
-compatibility: Requires the ui-loop MCP server (npx -y @djignesh21/ui-loop serve), Node 20+, and a Chromium (bundled Playwright Chromium, system Chrome, or UI_LOOP_CHROMIUM). A local dev server must be running.
+compatibility: Requires the ui-loop MCP server (npx -y @djignesh21/ui-loop@0.1.2 serve), Node 20+, and a Chromium (bundled Playwright Chromium, system Chrome, or UI_LOOP_CHROMIUM). A local dev server must be running.
 metadata:
   author: djig
   version: "0.1.0"

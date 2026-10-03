@@ -3,7 +3,7 @@
   "hooks": {
     "afterFileEdit": [
       {
-        "command": "npx -y @djignesh21/ui-loop hook --cursor"
+        "command": "npx -y @djignesh21/ui-loop@0.1.2 hook --cursor"
       }
     ]
   }
