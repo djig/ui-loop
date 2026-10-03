@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "npx -y @djig/ui-loop hook",
+            "command": "npx -y @djignesh21/ui-loop hook",
             "timeout": 60,
             "statusMessage": "ui-loop: checking the UI"
           }

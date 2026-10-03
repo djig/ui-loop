@@ -2,7 +2,7 @@
   "mcpServers": {
     "ui-loop": {
       "command": "npx",
-      "args": ["-y", "@djig/ui-loop", "serve"]
+      "args": ["-y", "@djignesh21/ui-loop", "serve"]
     }
   }
 }
