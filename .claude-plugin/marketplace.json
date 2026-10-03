@@ -1,0 +1,23 @@
+{
+  "name": "djig-plugins",
+  "owner": {
+    "name": "Jignesh",
+    "url": "https://djig.github.io"
+  },
+  "metadata": {
+    "description": "Plugins by djig",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ui-loop",
+      "source": "./",
+      "description": "Context-budgeted visual feedback for coding agents (MCP server + PostToolUse hook + skill).",
+      "version": "0.1.0",
+      "author": { "name": "Jignesh" },
+      "license": "MIT",
+      "keywords": ["ui", "screenshot", "visual-diff", "a11y", "mcp"],
+      "category": "testing"
+    }
+  ]
+}

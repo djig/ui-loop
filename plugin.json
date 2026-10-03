@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ui-loop",
+  "version": "0.1.0",
+  "description": "Context-budgeted visual feedback for coding agents: diff-only crops plus a structured text summary of the UI you just changed, within a token budget.",
+  "author": {
+    "name": "Jignesh",
+    "url": "https://djig.github.io"
+  },
+  "repository": "https://github.com/djig/ui-loop",
+  "license": "MIT",
+  "keywords": ["ui", "screenshot", "visual-diff", "playwright", "a11y", "mcp", "context-budget", "frontend"]
+}

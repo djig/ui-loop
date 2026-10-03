@@ -1,0 +1,80 @@
+{
+  "name": "@djig/ui-loop",
+  "version": "0.1.0",
+  "description": "Context-budgeted visual feedback for coding agents. MCP server + CLI + Claude Code plugin that lets an agent see the UI it just changed without flooding context.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Jignesh",
+    "url": "https://djig.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djig/ui-loop.git"
+  },
+  "homepage": "https://github.com/djig/ui-loop#readme",
+  "bugs": {
+    "url": "https://github.com/djig/ui-loop/issues"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "claude-code",
+    "cursor",
+    "codex",
+    "coding-agent",
+    "screenshot",
+    "visual-diff",
+    "playwright",
+    "a11y",
+    "context-budget",
+    "ui-testing"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "ui-loop": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "skills",
+    "hooks",
+    ".claude-plugin",
+    "plugin.json",
+    "mcp.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run clean && npm run build && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "axe-core": "^4.10.0",
+    "pixelmatch": "^7.1.0",
+    "playwright-core": "^1.56.0",
+    "pngjs": "^7.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pngjs": "^6.0.5",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}

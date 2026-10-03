@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx -y @djig/ui-loop hook",
+            "timeout": 60,
+            "statusMessage": "ui-loop: checking the UI"
+          }
+        ]
+      }
+    ]
+  }
+}

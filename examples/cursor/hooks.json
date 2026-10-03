@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "npx -y @djig/ui-loop hook --cursor"
+      }
+    ]
+  }
+}

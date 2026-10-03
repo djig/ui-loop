@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ui-loop": {
+      "command": "npx",
+      "args": ["-y", "@djig/ui-loop", "serve"]
+    }
+  }
+}
