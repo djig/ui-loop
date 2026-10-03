@@ -72,7 +72,7 @@ function int(v: string | boolean | string[] | undefined): number | undefined {
 const SNIPPETS = `
 Claude Code (plugin, recommended):
   claude plugin marketplace add djig/ui-loop
-  claude plugin install ui-loop@djig-plugins
+  claude plugin install ui-loop@djig-ui-loop
 
 Claude Code (plain MCP server):
   claude mcp add ui-loop -- npx -y @djignesh21/ui-loop serve

@@ -20,7 +20,7 @@ None of them ship the thing a coding agent actually needs after an edit: *diff-o
 
 ```bash
 claude plugin marketplace add djig/ui-loop
-claude plugin install ui-loop@djig-plugins
+claude plugin install ui-loop@djig-ui-loop
 ```
 
 This registers the MCP server, a `PostToolUse` hook that diffs the relevant route after you edit a UI file, and a skill that teaches Claude the capture → edit → diff loop.
