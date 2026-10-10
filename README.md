@@ -1,8 +1,18 @@
 # ui-loop
 
+> See the UI your coding agent just changed: structured summaries + diff-only crops in ~300 tokens instead of full screenshots.
+
+[![CI](https://github.com/djig/ui-loop/workflows/CI/badge.svg)](https://github.com/djig/ui-loop/actions)
+[![npm version](https://img.shields.io/npm/v/@djignesh21/ui-loop.svg)](https://www.npmjs.com/package/@djignesh21/ui-loop)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Context-budgeted visual feedback for coding agents.**
 
 ui-loop is an MCP server, a CLI and a Claude Code plugin that lets a coding agent (Claude Code, Cursor, Codex) *see the UI it just changed* without flooding its context window. Instead of a full screenshot every turn, the agent gets a short structured text summary (console errors, failed requests, overflow, layout shifts, accessibility violations) plus small crops of only the regions that changed since the last capture, all fitted into a token budget you choose. Captures live on disk under `.ui-loop/` with automatic eviction, so nothing accumulates in the conversation.
+
+![Full screenshot vs ui-loop comparison](docs/assets/ui-loop-comparison.png)
+
+*Real example: full screenshot costs ~1,366 tokens vs ui-loop's ~305 tokens (text summary + one diff crop)*
 
 ## Why
 
@@ -231,3 +241,7 @@ Issues and PRs welcome. Keep dependencies small, keep tool output bounded, and a
 ## License
 
 MIT © 2026 Jignesh
+
+---
+
+**More Claude Code tools by [@djig](https://github.com/djig):** [drift-guard](https://github.com/djig/drift-guard) (blocks stale React/Next/Tailwind patterns) · [claude-onair](https://github.com/djig/claude-onair) (desk status light mod) · [route-impact](https://github.com/djig/route-impact) (which Next.js routes a diff affects)

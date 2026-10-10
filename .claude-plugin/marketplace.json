@@ -13,10 +13,10 @@
       "name": "ui-loop",
       "source": "./",
       "description": "Context-budgeted visual feedback for coding agents (MCP server + PostToolUse hook + skill).",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "author": { "name": "Jignesh" },
       "license": "MIT",
-      "keywords": ["ui", "screenshot", "visual-diff", "a11y", "mcp"],
+      "keywords": ["ui", "screenshot", "visual-diff", "visual-regression", "a11y", "accessibility", "mcp", "claude-code-plugin"],
       "category": "testing"
     }
   ]

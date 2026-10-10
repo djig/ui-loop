@@ -13,9 +13,13 @@
     "ui",
     "screenshot",
     "visual-diff",
+    "visual-regression",
     "playwright",
     "a11y",
+    "accessibility",
     "mcp",
+    "model-context-protocol",
+    "claude-code-plugin",
     "context-budget",
     "frontend"
   ],
