@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ui-loop",
+  "displayName": "UI Loop",
+  "description": "Context-budgeted visual feedback for coding agents: text summaries + diff-only crops within a token budget.",
+  "version": "0.1.2",
+  "homepage": "https://github.com/djig/ui-loop",
+  "author": {
+    "name": "Jignesh",
+    "url": "https://djig.github.io"
+  },
+  "license": "MIT",
+  "runtime": {
+    "type": "npm",
+    "package": "@djignesh21/ui-loop",
+    "transport": {
+      "type": "stdio",
+      "command": "serve"
+    }
+  }
+}

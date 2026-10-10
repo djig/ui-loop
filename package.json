@@ -19,17 +19,23 @@
   "keywords": [
     "mcp",
     "mcp-server",
+    "model-context-protocol",
     "claude-code",
+    "claude-code-plugin",
     "cursor",
     "codex",
     "coding-agent",
+    "ai-agents",
     "screenshot",
     "visual-diff",
+    "visual-regression",
     "playwright",
     "a11y",
+    "accessibility",
     "context-budget",
     "ui-testing"
   ],
+  "mcpName": "io.github.djig/ui-loop",
   "engines": {
     "node": ">=20"
   },
